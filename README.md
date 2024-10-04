@@ -1,4 +1,4 @@
-# Dicoding Collection Dashboard ✨
+# Brazil E-commerce Dashboard
 
 ## Setup Environment - Anaconda
 ```
