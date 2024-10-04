@@ -19,7 +19,7 @@ def create_product_category(df:pd.DataFrame):
 def create_customer_state_df(df:pd.DataFrame):
     return df[['customer_id', 'customer_state']].drop_duplicates().groupby('customer_state').size().reset_index(name='customers').sort_values(by="customers", ascending=False)
 
-all_df = pd.read_csv("all_data.csv")
+all_df = pd.read_csv("../dashboard/all_data.csv")
 
 all_df.sort_values(by="order_purchase_timestamp", inplace=True)
 all_df.reset_index(inplace=True)
